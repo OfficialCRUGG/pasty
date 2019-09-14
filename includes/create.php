@@ -23,11 +23,12 @@
         $statement1->bindParam("lang", $lang);
         $statement1->bindParam("displayAuthor", $authorDisplay);
         $statement1->execute();
+        header("Location:" . $path . "/" . $result);
     }
 ?>
 
 <form action="" method="post" class="create-form">
-    <textarea class="paste-input" name="paste-input"></textarea>
+    <textarea class="paste-input" name="paste-input" required></textarea>
     <br>
     <input type="radio" name="name-display" value="1" checked>Show Username as Author</input>
     <br>
