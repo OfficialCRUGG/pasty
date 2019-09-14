@@ -14,6 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans&display=swap" rel="stylesheet">
@@ -137,6 +138,8 @@
                     include("../includes/create.php");
                 }
             }
+        } else if($_GET["url"] == "hash" && $enable_hash_creator == true) {
+            include("../includes/hash.php");
         } else {
             include("../includes/paste.php");
         }

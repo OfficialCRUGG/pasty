@@ -13,8 +13,8 @@ $db_database = "pasty";
 $db_username = "dontUseRootPlease";
 $db_password = "useASafePasswordHere";
 
-
-
+# Enable Hash Creator - Use /hash/?pw=YourPWHere to create a password hash for the database. This will be removed once user creation is implemented
+$enable_hash_creator = false;
 
 
 
@@ -28,4 +28,4 @@ $db_password = "useASafePasswordHere";
 
 
 # Do not change anything below.
-$v = "0.1";
+$configv = "0.2";

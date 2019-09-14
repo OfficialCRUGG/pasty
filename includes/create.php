@@ -27,7 +27,7 @@
 ?>
 
 <form action="" method="post" class="create-form">
-    <textarea class="paste-input"></textarea>
+    <textarea class="paste-input" name="paste-input"></textarea>
     <br>
     <input type="radio" name="name-display" value="1" checked>Show Username as Author</input>
     <br>
@@ -35,7 +35,7 @@
     <br>
     <select id="lang" name="lang">
         <option value="plaintext" default>Plain text</option>
-        <option value="plaintext" disabled>--------------</option>
+        <option value="" disabled>--------------</option>
         <option value="css">CSS</option>
         <option value="javascript">JavaScript</option>
         <option value="python">Python</option>
@@ -47,7 +47,7 @@
         <option value="java">Java</option>
         <option value="typescript">TypeScript</option>
         <option value="lua">Lua</option>
-        <option value="plaintext" disabled>--------------</option>
+        <option value="" disabled>--------------</option>
         <option value="c">C</option>
         <option value="yaml">YAML</option>
         <option value="bash">Bash</option>
